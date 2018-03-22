@@ -1,0 +1,7 @@
+#hue {
+  background-color: rgb(230,230,230); 
+  border-radius: 200px; 
+  width: 200px; 
+  height: 200px;
+  cursor: crosshair;
+}

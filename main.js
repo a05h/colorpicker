@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     mouse.x = event.pageX - hue.offsetLeft;
     mouse.y = event.pageY - hue.offsetTop;
+    //let point = contextHue.getImageData(mouse.x, mouse.y, 1, 1).data;
     let point = contextHue.getImageData(mouse.x, mouse.y, 1, 1).data;
     //let data = point.data;
     let rgba = `rgba(${point[0]},${point[1]},${point[2]},${Math.round(point[3]/255)})`;
@@ -46,7 +47,3 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
-
-//https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas
-//http://stackoverflow.com/questions/20935299/generating-a-canvas-color-picker-with-full-rgb-space
